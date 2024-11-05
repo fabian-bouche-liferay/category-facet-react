@@ -1,0 +1,18 @@
+assemble:
+    - from: build/static
+      into: static
+category-browser-custom-element-js:
+    url: js/main.*.js
+    type: globalJS
+    name: Category Browser JS
+category-browser-custom-element-css:
+    url: css/main.*.css
+    type: globalCSS
+    name: Category Browser CSS
+category-browser-user-agent:
+    .serviceAddress: localhost:8080
+    .serviceScheme: http
+    name: Category Browser User Agent
+    scopes:
+        - Liferay.Headless.Admin.Taxonomy.everything.read
+    type: oAuthApplicationUserAgent
